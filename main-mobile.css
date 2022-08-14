@@ -1,0 +1,140 @@
+@media only screen and (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .buttom-details {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* width: 100%; */
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .mobile-nav_toggle {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .mobile-nav_toggle-btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+
+  header {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mobile-nav {
+    width: 20rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    z-index: 100;
+    background: rgba(247, 255, 247);
+
+    display: flex;
+    flex-direction: column;
+    transition: 0.7s;
+  }
+
+  .mobile-nav_close {
+    margin: 1rem 1rem 0 1rem;
+    pad: 1rem;
+    font-size: xx-large;
+    width: 4rem;
+    align-self: right;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .mobile-nav_close:hover,
+  .mobile-nav_close:active {
+    background-color: rgba(78, 205, 196, 0.2);
+  }
+
+  .mobile-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-nav ul li {
+    /* margin: 1rem; */
+    display: block;
+    width: 100%;
+  }
+  .mobile-nav ul li a {
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 700;
+    padding: 1rem;
+    transition: transform 2s, background-color 0.3s;
+  }
+
+  .mobile-nav ul li a:hover,
+  .mobile-nav ul li a:active {
+    background-color: rgba(78, 205, 196, 0.2);
+  }
+
+  .product-overview {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features__card {
+    max-width: 25rem;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details article,
+  .details div {
+    max-width: 25rem;
+  }
+
+  .ratings-customers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-newsletter__email {
+    width: 18rem;
+  }
+
+  .buttom-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttom-details nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
